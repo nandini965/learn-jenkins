@@ -1,0 +1,11 @@
+pipeline {
+ agent any {
+ }
+ stage1 {
+ steps
+  'sh echo hello world'
+ }
+ post {
+ always {
+  'delete ws()'
+  }
