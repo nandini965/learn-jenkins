@@ -1,17 +1,4 @@
-pipeline {
- agent any{
- label 'workstation'
- }
- pipeline {
-  agent {
-  node 'workstation'
-  }
-  stage1 {
-  steps {
-   'sh echo hello world'
-  }
- }
- }
+
  pipeline {
 
   agent {
