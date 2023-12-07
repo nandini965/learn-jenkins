@@ -1,11 +1,10 @@
 pipeline {
- agent any {
+ agent {
+ node 'workstation'
  }
  stage1 {
- steps
+ steps {
   'sh echo hello world'
  }
- post {
- always {
-  'delete ws()'
-  }
+}
+}
